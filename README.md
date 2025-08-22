@@ -21,27 +21,29 @@ Prerequisites:
   git clone [Your Flutter App Repository URL Here]
   cd smartrep-ai-flutter-app
   ```bash
+
 2. Install Dependencies
-  - From the root of the project, run the following command to fetch all the necessary Dart packages:
+- From the root of the project, run the following command to fetch all the necessary Dart packages:
   
   ```bash
   flutter pub get
   ```bash
+
 3. Configure Environment Variables
-  - In the lib/ directory of the project, create a new file named .env.
-  - Add your public Supabase keys to this file. This allows the app to connect to the authentication service.
+- In the lib/ directory of the project, create a new file named .env.
+- Add your public Supabase keys to this file. This allows the app to connect to the authentication service.
   
   ```bash
   SUPABASE_URL=YOUR_SUPABASE_PROJECT_URL
   SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
   ```bash
   
-  - Ensure you have a flutter_dotenv package in your pubspec.yaml and have loaded it in your main.dart file.
+- Ensure you have a flutter_dotenv package in your pubspec.yaml and have loaded it in your main.dart file.
 
 4. Run the App
-  - Make sure your Python backend server is running.
-  - Open the project in your IDE and select a target device (e.g., an iOS Simulator, Android Emulator, or a connected physical device).
-  - Run the app from your IDE or use the command line:
+- Make sure your Python backend server is running.
+- Open the project in your IDE and select a target device (e.g., an iOS Simulator, Android Emulator, or a connected physical device).
+- Run the app from your IDE or use the command line:
   
   ```bash
   flutter run
