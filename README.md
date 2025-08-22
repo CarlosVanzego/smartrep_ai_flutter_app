@@ -17,8 +17,10 @@ Prerequisites:
 - The SmartRepAI Python Backend must be running locally for the app to connect to it.
 
 1. Clone the Repository:
+```bash
   git clone [Your Flutter App Repository URL Here]
 cd smartrep-ai-flutter-app
+```bash
 
 2. Install Dependencies
 From the root of the project, run the following command to fetch all the necessary Dart packages:
