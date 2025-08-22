@@ -16,20 +16,18 @@ Prerequisites:
 - You need an IDE like VS Code with the Flutter extension or Android Studio.
 - The SmartRepAI Python Backend must be running locally for the app to connect to it.
 
-  1. Clone the Repository:
+1. Clone the Repository:
   ```bash
   git clone [Your Flutter App Repository URL Here]
   cd smartrep-ai-flutter-app
   ```bash
-  
-  3. Install Dependencies
+2. Install Dependencies
   - From the root of the project, run the following command to fetch all the necessary Dart packages:
   
   ```bash
   flutter pub get
   ```bash
-  
-  3. Configure Environment Variables
+3. Configure Environment Variables
   - In the lib/ directory of the project, create a new file named .env.
   - Add your public Supabase keys to this file. This allows the app to connect to the authentication service.
   
@@ -39,8 +37,8 @@ Prerequisites:
   ```bash
   
   - Ensure you have a flutter_dotenv package in your pubspec.yaml and have loaded it in your main.dart file.
-  
-  4. Run the App
+
+4. Run the App
   - Make sure your Python backend server is running.
   - Open the project in your IDE and select a target device (e.g., an iOS Simulator, Android Emulator, or a connected physical device).
   - Run the app from your IDE or use the command line:
