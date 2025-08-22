@@ -55,5 +55,6 @@ This project is the official cross-platform mobile application for SmartRepAI, b
 - `State Management`: Provider / BLoC (Specify which you are using)
 - `Backend Communication`: http package for API calls
 
-# Authentication & Database: Supabase
+# Authentication & Database: 
+- Supabase
 - AI Integration: Connects to the Python/Flask backend which utilizes the Google Gemini API.
