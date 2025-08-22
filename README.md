@@ -18,6 +18,7 @@ This project is the official cross-platform mobile application for SmartRepAI, b
 
 
 1. Clone the Repository:
+   
 ```bash
 git clone [Your Flutter App Repository URL Here]
 cd smartrep-ai-flutter-app
@@ -25,6 +26,7 @@ cd smartrep-ai-flutter-app
 
 3. Install Dependencies
 - From the root of the project, run the following command to fetch all the necessary Dart packages:
+
 ```bash
 flutter pub get
 ```bash
@@ -32,6 +34,7 @@ flutter pub get
 3. Configure Environment Variables
 - In the lib/ directory of the project, create a new file named .env.
 - Add your public Supabase keys to this file. This allows the app to connect to the authentication service.
+
 ```bash
 SUPABASE_URL=YOUR_SUPABASE_PROJECT_URL
 SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
@@ -43,6 +46,7 @@ SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
 - Make sure your Python backend server is running.
 - Open the project in your IDE and select a target device (e.g., an iOS Simulator, Android Emulator, or a connected physical device).
 - Run the app from your IDE or use the command line:
+
 ```bash
 flutter run
 ```bash
