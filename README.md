@@ -16,9 +16,7 @@ This project is the official cross-platform mobile application for SmartRepAI, b
   - You need an IDE like VS Code with the Flutter extension or Android Studio.
   - The SmartRepAI Python Backend must be running locally for the app to connect to it.
 
-
 1. Clone the Repository:
-   
 ```bash
 git clone [Your Flutter App Repository URL Here]
 cd smartrep-ai-flutter-app
