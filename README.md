@@ -11,10 +11,11 @@ This project is the official cross-platform mobile application for SmartRepAI, b
 - Voice-to-Text Input: Utilizes the device's native speech recognition for hands-free, natural interaction within chat interfaces.
 
 # How to Run the App
-- Prerequisites
-> You must have the Flutter SDK installed.
-> You need an IDE like VS Code with the Flutter extension or Android Studio.
-> The SmartRepAI Python Backend must be running locally for the app to connect to it.
+- Prerequisites:
+  - You must have the Flutter SDK installed.
+  - You need an IDE like VS Code with the Flutter extension or Android Studio.
+  - The SmartRepAI Python Backend must be running locally for the app to connect to it.
+
 
 1. Clone the Repository:
 ```bash
