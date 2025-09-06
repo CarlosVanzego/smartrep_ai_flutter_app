@@ -18,13 +18,13 @@ Future<void> main() async {
   // 'WidgetsFlutterBinding' is a class that finds the Flutter engine and connects it to the framework.
   //This line ensures that the Flutter engine is fully initialized and is required when doing async setup before calling runApp().
   WidgetsFlutterBinding.ensureInitialized();
-
-  // Reads the Supabase URL and Anon Key from the environment variables
+  
+  // Read the Supabase URL and Anon Key from the environment variables
   // Vercel will provide these during the build process.
   const supaUrl = String.fromEnvironment('SUPABASE_URL');
   const supaAnonKey = String.fromEnvironment('SUPABASE_ANON_KEY');
 
-  // Initialize Supabase using the keys read from the environment.
+  // Initialize Supabase using the keys we just read from the environment.
   await Supabase.initialize(
     url: supaUrl,
     anonKey: supaAnonKey,
