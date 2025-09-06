@@ -19,14 +19,15 @@ Future<void> main() async {
   //This line ensures that the Flutter engine is fully initialized and is required when doing async setup before calling runApp().
   WidgetsFlutterBinding.ensureInitialized();
 
-  // This line initializes Supabase by connecting to my specific project using the provided URL and Anon Key.
-  // This is where the app sets up backend communication (authentication, database, etc.).
-  // 'url' is the unuqie URL of my Supabase project, which is used to connect to the backend services.
-  // 'anonKey' is the public API key for my Supabase project, which allows the app to access the backend services securely.
+  // Reads the Supabase URL and Anon Key from the environment variables
+  // Vercel will provide these during the build process.
+  const supaUrl = String.fromEnvironment('SUPABASE_URL');
+  const supaAnonKey = String.fromEnvironment('SUPABASE_ANON_KEY');
+
+  // Initialize Supabase using the keys read from the environment.
   await Supabase.initialize(
-    url: 'https://sckbcgxrebtmxozplmke.supabase.co',
-    anonKey:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNja2JjZ3hyZWJ0bXhvenBsbWtlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTEyMDIwNjcsImV4cCI6MjA2Njc3ODA2N30.rCsHHG832qIKbrxxEvkIGVxCLpXJsd-NbCKvXgR_sxs',
+    url: supaUrl,
+    anonKey: supaAnonKey,
   );
 
   // This line runs the main app widget, which is MyApp.
